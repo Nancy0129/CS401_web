@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Prediction Result</title>
+</head>
+<body bgcolor="#FAE5D3">
+
+  <div align="center">
+    <h1>Prediction Result</h1>
+  </div>
+  <h4>Text:</h4>
+  <p {word-wrap:break-word; }> {{in_text}}</p>
+  <b>is_american:</b>  &nbsp;&nbsp;  {{pre}} <br> <br>
+  <b>version: </b> &nbsp;&nbsp;  {{version}} <br> <br>
+  <b>model_date: </b> &nbsp;&nbsp;   {{model_date}}
+
+  <br> <br> <br> <br>
+  <form method="get" action="/api/american">
+    <input type="submit" value="Back">
+   
+  </form>
+  <form method="get" action="/api/american/download">
+    <input type="submit" value="Download">
+  </form>
+  
+
+
+
+
+</body>
+</html>
